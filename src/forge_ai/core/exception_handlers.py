@@ -2,7 +2,7 @@ from fastapi import Request
 from fastapi.responses import JSONResponse
 
 from forge_ai.core.exceptions import ForgeAIException
-from forge_ai.models.error import ErrorDetail, ErrorResponse
+from forge_ai.api.schemas.common import ErrorDetail, ErrorResponse
 
 
 async def forge_ai_exception_handler(
