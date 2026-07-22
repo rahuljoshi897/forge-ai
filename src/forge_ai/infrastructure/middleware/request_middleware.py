@@ -6,7 +6,7 @@ Responsibilities:
 - Measure request execution time.
 - Log incoming requests.
 - Log outgoing responses.
-- Add request metadata to response headers.
+- Add request metadata to response headers..
 """
 
 from __future__ import annotations
