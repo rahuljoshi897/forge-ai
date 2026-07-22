@@ -1,10 +1,24 @@
 [project]
 name = "forge-ai"
 version = "0.1.0"
-description = "Add your description here"
+description = "Production-grade AI Software Engineering Platform built with FastAPI, LangChain, and LangGraph."
 readme = "README.md"
 requires-python = ">=3.13"
+
 dependencies = [
     "fastapi>=0.139.2",
+    "uvicorn[standard]>=0.35.0",
     "pydantic>=2.13.4",
+    "pydantic-settings>=2.10.1",
+    "structlog>=25.4.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.1.0",
+    "pytest-cov>=6.2.1",
+    "ruff>=0.12.7",
+    "mypy>=1.17.1",
+    "pre-commit>=4.2.0",
 ]
