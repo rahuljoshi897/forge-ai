@@ -10,6 +10,9 @@ session_factory = async_sessionmaker(
         expire_on_commit=False,
 )
 
+def get_session_factory()->async_sessionmaker[AsyncSession]:
+    return session_factory
+
 """
     Explaination
 async_sessionmaker: This is SQLAlchemy's recommended way to create sessions.
